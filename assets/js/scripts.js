@@ -62,17 +62,21 @@ $(document).ready(function() {
 	==============================================*/
 	if ($(window).scrollTop()< ($(window).height()-50)){
 		$('#main-nav').removeClass('scrolled');
+		$('#main-nav-bc').removeClass('scrolled');
 	}
 	else{
-		$('#main-nav').addClass('scrolled');    
+		$('#main-nav').addClass('scrolled');
+		$('#main-nav-bc').addClass('scrolled');     
 	}
 
 	$(window).scroll(function(){
 		if ($(window).scrollTop()< ($(window).height()-50)){
 			$('#main-nav').removeClass('scrolled');
+			$('#main-nav-bc').removeClass('scrolled');
 		}
 		else{
-			$('#main-nav').addClass('scrolled');    
+			$('#main-nav').addClass('scrolled');  
+			$('#main-nav-bc').addClass('scrolled');   
 		}
 	});
 	

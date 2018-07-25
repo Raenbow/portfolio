@@ -85,29 +85,38 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .color1 .service-icon,
 .color1.service-item ul li:nth-child(2):before{
-    background:#509B9E;
+    background:#5DD39E;
 }
 
 .color1 .service-icon:after{
-    border:3px solid #509B9E;
+    border:3px solid #5DD39E;
 }
 
 .color2 .service-icon,
 .color2.service-item ul li:nth-child(2):before{
-    background:#52CCBA;
+    background:#34BAA7;
 }
 
 .color2 .service-icon:after{
-    border:3px solid #52CCBA;
+    border:3px solid #34BAA7;
 }
 
 .color3 .service-icon,
 .color3.service-item ul li:nth-child(2):before{
-    background:#334959;
+    background:#525174;
 }
 
 .color3 .service-icon:after{
-    border:3px solid #334959;
+    border:3px solid #525174;
+}
+
+.color4 .service-icon,
+.color4.service-item ul li:nth-child(2):before{
+    background:#513B56;
+}
+
+.color4 .service-icon:after{
+    border:3px solid #513B56;
 }
 
 /*------------------
@@ -177,8 +186,16 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ---- Menu Styles ----
 -------------------------*/
 
-#main-nav .container{
+#main-nav-bc{
     padding:0 0 20px;
+    background: transparent;
+    margin: 0;
+    width: 100%;
+}
+
+#main-nav-bc.scrolled{
+    background: url("../images/design/pattern-3.png");
+    background-size: 100%;
 }
 
 #main-nav .navbar-brand img{
@@ -227,8 +244,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav.scrolled{
-    background: url("../images/design/rosegold-wood0002.jpg");
-    background-size: 100%;
+    background:#525174;
     box-shadow: 0 0 3px rgba(0,0,0,0.2);
 }
 
@@ -257,16 +273,24 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     padding:0px 10px;
     font-size:18px;
     line-height:54px;
-    font-weight:400;
+    font-weight:bold;
     background:transparent;
-    color:#fff;
+    color: #fff;
+    text-shadow: -2px -2px 5px #2b5f7280, 
+    2px -2px 5px #2b5f7280, 
+    -2px 2px 5px #2b5f7280, 
+    2px 2px 5px #2b5f7280;
     transition: color .2s ease-in;
 }
 
 #main-nav.scrolled .nav a,
 #main-nav.scrolled .nav a:active,
 #main-nav.scrolled .nav a:hover{
-    color:#fff;
+    color: #fff;
+    text-shadow: -2px -2px 5px #513B56, 
+    2px -2px 5px #513B56, 
+    -2px 2px 5px #513B56, 
+    2px 2px 5px #513B56;
 }
 
 #main-nav li{
@@ -275,9 +299,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     border:2px solid transparent;
 }
 
-#main-nav.scrolled .nav li.active a,
-#main-nav.scrolled .nav a:hover{
-    color: #52CCBA;
+#main-nav.scrolled .nav li.active a{
+    font-size: 1.6em;
 }
 
 /*-----------------------
@@ -306,17 +329,20 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     margin: 0;
     font-size: 32px;
     font-weight: 400;
-    text-shadow: 0 0 10px #254d70;
+    text-shadow: -5px -5px 10px #327e8280, 
+    5px -5px 10px #327e8280, 
+    -5px 5px 10px #327e8280, 
+    5px 5px 10px #327e8280;
 }
 
 #home h1{
     margin:0;
     font-size: 82px;
     font-weight: 600;
-    text-shadow: -5px -5px 15px #254d7080, 
-    5px -5px 15px #254d7080, 
-    -5px 5px 15px #254d7080, 
-    5px 5px 15px #254d7080;
+    text-shadow: -5px -5px 15px #388d9180, 
+    5px -5px 15px #388d9180, 
+    -5px 5px 15px #388d9180, 
+    5px 5px 15px #388d9180;
 }
 
 #home h1 + p{
@@ -345,7 +371,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     text-align:center;
     width:150px;
     height:150px;
-    margin:20px auto 50px;
+    margin:50px auto 30px;
     border-radius:50%;
     font-size:62px;
     line-height:150px;
@@ -385,6 +411,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     -webkit-transition:all 0.3s ease-out;
     transition:none;
     display: inline-block;
+    margin-top: 35px;
+    font-size: 80px;
 }
 
 .service-item:hover [class*=fa], .service-item:hover [class*=devicon]{
@@ -412,14 +440,22 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 /*-----------------------
---- Skills Styles ----
+--- Education Styles ----
 -------------------------*/
+
+.edu-row {
+    margin: 50px 0;
+}
+
+.edu-logo {
+    width: 100%;
+}
 
 #skills{
     background-color: #fff;
 }
 
-.skills-bars{
+/* .skills-bars{
     position: relative;
     margin-top: 20px;
     height:350px;
@@ -439,9 +475,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .skill1{
     left:0;
     background: #52CCBA;
-}
+} */
 
-.skill2{
+/* .skill2{
     left:25%;
     background: #509B9E;
 }
@@ -470,7 +506,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     width: 100%;
     bottom: -40px;
     text-align: center;
-}
+} */
 
 /*-----------------------
 --- Portfolio Styles ----
