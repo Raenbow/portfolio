@@ -67,7 +67,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color2{
     color:#fff;
-    background:#52CCBA;
+    background:url("../images/design/12-02.png");
+    background-size: 150%;
 }
 
 .bg-color3{
@@ -208,7 +209,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-size:24px;
     font-weight:700;
     color: #fff;
-    text-shadow: 0 0 10px #254d70;
+    text-shadow: -2px -2px 10px #525174, 
+    2px -2px 10px #525174, 
+    -2px 2px 10px #525174, 
+    2px 2px 10px #525174;
 }
 
 .navbar-brand,
@@ -276,10 +280,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight:bold;
     background:transparent;
     color: #fff;
-    text-shadow: -2px -2px 5px #2b5f7280, 
-    2px -2px 5px #2b5f7280, 
-    -2px 2px 5px #2b5f7280, 
-    2px 2px 5px #2b5f7280;
+    text-shadow: -2px -2px 5px #525174, 
+    2px -2px 5px #525174, 
+    -2px 2px 5px #525174, 
+    2px 2px 5px #525174;
     transition: color .2s ease-in;
 }
 
@@ -321,7 +325,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position: fixed;
     top: 50%;
     width: 100% !important;
-    margin-top:-120px;
+    /* margin-top:-120px; */
     z-index: -1;
 }
 
@@ -329,20 +333,20 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     margin: 0;
     font-size: 32px;
     font-weight: 400;
-    text-shadow: -5px -5px 10px #327e8280, 
-    5px -5px 10px #327e8280, 
-    -5px 5px 10px #327e8280, 
-    5px 5px 10px #327e8280;
+    text-shadow: -5px -5px 10px #5DD39E80, 
+    5px -5px 10px #525174, 
+    -5px 5px 10px #525174, 
+    5px 5px 10px #5DD39E80;
 }
 
 #home h1{
     margin:0;
     font-size: 82px;
     font-weight: 600;
-    text-shadow: -5px -5px 15px #388d9180, 
-    5px -5px 15px #388d9180, 
-    -5px 5px 15px #388d9180, 
-    5px 5px 15px #388d9180;
+    text-shadow: -5px -5px 15px #5DD39E80, 
+    5px -5px 15px #525174, 
+    -5px 5px 15px #525174, 
+    5px 5px 15px #5DD39E80;
 }
 
 #home h1 + p{
