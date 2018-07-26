@@ -53,7 +53,8 @@
 		MAIN NAV
 		=============================================== -->
 		<div id="main-nav" class="navbar navbar-fixed-top">
-			<div id="main-nav-bc" class="container">
+			
+			<div class="container">
 			
 				<div class="navbar-header">
 				
@@ -78,13 +79,15 @@
 							<a href="#about" class="scrollto">About Me</a>
 						</li>
 						<li>
-							<a href="#portfolio" class="scrollto">My Works</a>
+							<a href="#portfolio" class="scrollto">My Portfolio</a>
 						</li>
 						<li>
 							<a href="#contact" class="scrollto">Contact Me</a>
 						</li>
 					</ul>
 				</div><!--End navbar-collapse -->
+
+				<img id="main-nav-bc" src="./assets/images/design/pattern-3.png" alt="">
 				
 			</div><!--End container -->
 			
@@ -190,33 +193,33 @@
 				
 					<div class="col-sm-3 service-item color3 scrollimation scale-in">
 					
-						<div class="service-icon"><i class="devicon-git-plain"></i></div>
+						<div class="service-icon"><i class="devicon-illustrator-plain"></i></div>
 						
-						<h3>git</h3>
+						<h3>Illustrator</h3>
 						
 					</div>
 				
 					<div class="col-sm-3 service-item color4 scrollimation scale-in d1">
 					
-						<div class="service-icon"><i class="devicon-nodejs-plain"></i></div>
+						<div class="service-icon"><i class="devicon-photoshop-plain"></i></div>
 						
-						<h3>node.js</h3>
+						<h3>Photoshop</h3>
 						
 					</div>
 					
 					<div class="col-sm-3 service-item color1 scrollimation scale-in d2">
 					
-						<div class="service-icon"><i class="devicon-github-plain"></i></div>
+						<div class="service-icon"><i class="devicon-gimp-plain"></i></div>
 						
-						<h3>GitHub</h3>
+						<h3>Gimp</h3>
 						
 					</div>
 
 					<div class="col-sm-3 service-item color2 scrollimation scale-in d2">
 					
-						<div class="service-icon"><i class="devicon-github-plain"></i></div>
+						<div class="service-icon"><i class="devicon-inkscape-plain"></i></div>
 						
-						<h3>GitHub</h3>
+						<h3>Inkscape</h3>
 						
 					</div>
 					
@@ -245,9 +248,7 @@
 					
 						<h1 class="big-text">About Me</h1>
 						
-						<p class="lead">I am Delray Faskey</p>
-					
-						<!-- <p>I am passionate about combining function, interaction and form to design for fitting user experiences that make people happy. I have a passion for creating challenging, intuitive and beautiful products. My design process is very hands-on and visual.</p> -->
+						<p class="lead">I have a passion for art and creativity, and I’m looking to apply it through coding! While my passion for art runs deep, I also love problem solving and taking on new challenges. My previous jobs have all been centered around customer service, and I’ll always love making people smile, but I’ve decided it’s time to change the career-gears and let the problem-solving and creativity take the wheel!</p>
 					
 					</div>
 				
@@ -258,7 +259,7 @@
 		</section>
 	
 		<!-- ==============================================
-		SKILLS
+		EDUCATION
 		=============================================== -->
 		<section id="skills" class="add-padding border-bottom-color2">
 		
@@ -276,7 +277,7 @@
 				
 				<div class="row edu-row">
 				
-					<div class="col-sm-6 col-md-5 text-right scrollimation fade-up d1">
+					<div class="col-sm-6 col-md-5 text-right scrollimation fade-right d1">
 					
 						<p class="lead">LearningFuze</p>
 					
@@ -300,7 +301,7 @@
 					
 					</div>
 
-					<div class="col-sm-6 col-md-5 text-left scrollimation fade-up d1">
+					<div class="col-sm-6 col-md-5 text-left scrollimation fade-left d1">
 					
 						<p class="lead">Santiago Canyon College</p>
 					
@@ -321,7 +322,7 @@
 		
 			<div class="container">
 				
-				<h1 class="big-text text-center scrollimation fade-in">My Works</h1>
+				<h1 class="big-text text-center scrollimation fade-in">My Portfolio</h1>
 				
 				<!--==== Portfolio Filters ====-->
 				<div id="filter-works">
@@ -330,14 +331,14 @@
 							<a href="#" data-filter="*">All</a>
 						</li>
 						<li class="scrollimation fade-right">
-							<a href="#" data-filter=".identity">Identity</a>
+							<a href="#" data-filter=".identity">Web Applications</a>
 						</li>
 						<li class="scrollimation fade-left">
-							<a href="#" data-filter=".logo">Logo</a>
+							<a href="#" data-filter=".logo">Artwork</a>
 						</li>
-						<li class="scrollimation fade-left d1">
+						<!-- <li class="scrollimation fade-left d1">
 							<a href="#" data-filter=".illustration">Illustration</a>
-						</li>
+						</li> -->
 					</ul>
 				</div><!--End portfolio filters -->
 				
@@ -575,7 +576,7 @@
 		<!-- ==============================================
 		TWITTER
 		=============================================== -->
-		<section id="twitter" class="add-padding bg-color1">
+		<!-- <section id="twitter" class="add-padding bg-color1">
 		
 			<div class="container">
 				<div class="row scrollimation fade-in">
@@ -588,7 +589,7 @@
 				</div>
 			</div>
 		
-		</section>
+		</section> -->
 			
 		<!-- ==============================================
 		CONTACT
@@ -616,7 +617,7 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-name">Name</label>
 						  <div class="controls">
-							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" type="text" data-error-empty="Please enter your name">
+							<input id="contact-name" name="contactName" placeholder="Your name" class="form-control requiredField" type="text" data-error-empty="What should I call you?">
 							<i class="fa fa-user"></i>
 						  </div>
 						</div><!-- End name input -->
@@ -624,7 +625,7 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-mail">Email</label>
 						  <div class=" controls">
-							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" type="email" data-error-empty="Please enter your email" data-error-invalid="Invalid email address">
+							<input id="contact-mail" name="email" placeholder="Your email" class="form-control requiredField" type="email" data-error-empty="What's your email?" data-error-invalid="Invalid email address">
 							<i class="fa fa-envelope"></i>
 						  </div>
 						</div><!-- End email input -->
@@ -632,7 +633,7 @@
 						<div class="form-group">
 						  <label class="control-label" for="contact-message">Message</label>
 							<div class="controls">
-								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" rows="6" data-error-empty="Please enter your message"></textarea>
+								<textarea id="contact-message" name="comments"  placeholder="Your message" class="form-control requiredField" rows="6" data-error-empty="Tell me what's on your mind"></textarea>
 								<i class="fa fa-comment"></i>
 							</div>
 						</div><!-- End textarea -->
@@ -651,11 +652,11 @@
 		<!-- ==============================================
 		MAP
 		=============================================== -->
-		<section id="map">
+		<!-- <section id="map">
 		
 			<div id="gmap"></div>
 		
-		</section>
+		</section> -->
 		
 		<!-- ==============================================
 		FOOTER
@@ -670,11 +671,8 @@
 					<li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
 					<li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
 					<li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
-					<li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/delray-faskey/"><i class="fa fa-linkedin fa-fw"></i></a></li>
 				</ul>
-			
-				<!-- <p class="text-center">&copy; 2014 - All rights reserved</p> -->
-				<!-- <p class="text-center"><a href="https://wrapbootstrap.com/user/qthemes" target="_blank">Made by Qthemes</a></p> -->
 			
 			</div>
 			
@@ -697,21 +695,19 @@
 		<script src="assets/js/contact.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		
-		<script>
+		<!-- <script>
 		
 			var mapPoint = {
-					'lat': 40.720099,
-					'lng': -74.005764,
-					'zoom' : 15,
-					'infoText':'<p>250 W Broadway\
-								<br/>New York\
-								<br/>NY 10013</p>',
+					'lat': 33.6694649,
+					'lng': -117.8231107,
+					'zoom' : 12,
+					'infoText':'<p>Irvine, CA</p>',
 					'linkText':'View on Google Maps',
-					'mapAddress':'250 W Broadway, New York, NY 10013',
+					'mapAddress':'Irvine, CA',
 					'icon': 'assets/images/pin-dark.png'
 				};
 			
-		</script>
+		</script> -->
 		
 	</body>
 	

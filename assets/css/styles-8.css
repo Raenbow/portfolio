@@ -6,7 +6,7 @@ body{
 	font-family: 'Special Elite', cursive;
     font-size:16px;
     font-weight:300;
-    color:#6d6d6d;
+    color:#513B56;
 	overflow-x:hidden;
 }
 
@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .section-title{
     margin-top:-20px;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
     text-align:center;
 }
 
@@ -153,6 +153,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color:#fff;
 }
 
+
 .btn-color1 .fa,
 .btn-color2 .fa{
     margin-right: 15px;
@@ -188,15 +189,27 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 -------------------------*/
 
 #main-nav-bc{
-    padding:0 0 20px;
-    background: transparent;
-    margin: 0;
+    opacity: 0;
+}
+
+#main-nav-bc, 
+#main-nav-bc.scrolled{
+    position: absolute;
+    height: 135vh;
     width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-transition:opacity 0.4s;
+    transition:opacity 0.4s;
 }
 
 #main-nav-bc.scrolled{
-    background: url("../images/design/pattern-3.png");
-    background-size: 100%;
+    opacity: .85;
+}
+
+#main-nav .container{
+    padding:0 0 20px;
 }
 
 #main-nav .navbar-brand img{
@@ -243,13 +256,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background:transparent;
     color:#fff;
     box-shadow:0 0 0px transparent;
-    -webkit-transition:background 0.3s ease-out;
-    transition:background 0.3s ease-out;
+    -webkit-transition:background 0.3s;
+    transition:background 0.3s;
+    overflow: hidden;
 }
 
 #main-nav.scrolled{
     background:#525174;
-    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+    box-shadow: 0 0 3px rgba(52, 186, 167, 0.4);
 }
 
 #main-nav.scrolled .navbar-toggle{
@@ -304,7 +318,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav.scrolled .nav li.active a{
-    font-size: 1.6em;
+    text-shadow: -2px -2px 5px #34BAA7, 
+    2px -2px 5px #34BAA7, 
+    -2px 2px 5px #34BAA7, 
+    2px 2px 5px #34BAA7;
 }
 
 /*-----------------------
@@ -333,20 +350,21 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     margin: 0;
     font-size: 32px;
     font-weight: 400;
-    text-shadow: -5px -5px 10px #5DD39E80, 
-    5px -5px 10px #525174, 
-    -5px 5px 10px #525174, 
-    5px 5px 10px #5DD39E80;
+    text-shadow: -5px -5px 10px #52517490, 
+    5px -5px 10px #52517490, 
+    -5px 5px 10px #52517490, 
+    5px 5px 10px #52517490;
 }
 
 #home h1{
     margin:0;
+    color: whitesmoke;
     font-size: 82px;
     font-weight: 600;
-    text-shadow: -5px -5px 15px #5DD39E80, 
+    text-shadow: -5px -5px 15px #525174, 
     5px -5px 15px #525174, 
     -5px 5px 15px #525174, 
-    5px 5px 15px #5DD39E80;
+    5px 5px 15px #525174;
 }
 
 #home h1 + p{
@@ -359,6 +377,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #services{
     background-color: #fff;
     box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    border-top: 7px solid #525174;
 }
 
 .service-item{
@@ -519,7 +538,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #portfolio{
     padding-top:70px;
     background:transparent;
-    color:#fff;
+    color:#509B9E;
+    text-shadow: -2px -2px 15px #fff, 
+    2px -2px 15px #fff, 
+    -2px 2px 15px #fff, 
+    2px 2px 15px #fff;
     overflow: hidden;
     position: relative;
 }
@@ -592,15 +615,23 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #filter-works ul li a,
 #filter-works ul li a:active,
 #filter-works ul li a:hover{
-    font-weight:300;
+    font-weight: bold;
     background:transparent;
-    color:#fff;
+    color:#525174;
     text-decoration:none;
+    text-shadow: -2px -2px 2px #fff, 
+    2px -2px 2px #fff, 
+    -2px 2px 2px #fff, 
+    2px 2px 2px #fff;
 }
 
 #filter-works ul li.active a,
 #filter-works ul li:hover a{
-    color:#509B9E;
+    color:#fff;
+    text-shadow: -5px -5px 15px #509B9E, 
+    5px -5px 15px #509B9E, 
+    -5px 5px 15px #509B9E, 
+    5px 5px 15px #509B9E;
 }
 
 .masonry-wrapper{
@@ -955,6 +986,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background-repeat:no-repeat;
     background-position:0 100%;
     background-color: #fff;
+    border-top: 7px solid #525174;
 }
 
 #contact-form .form-group label{
@@ -1093,7 +1125,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-footer{
     padding-top:50px;
     padding-bottom:40px;
-    background: #1f2c37;
+    background: url("../images/design/13-01.png");
+    background-size: 100%;
 }
 
 .social-links {
