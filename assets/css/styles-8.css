@@ -67,8 +67,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .bg-color2{
     color:#fff;
-    background:url("../images/design/12-02.png");
-    background-size: 150%;
+    background:url("../images/design/13-01.png");
+    background-size: 125%;
 }
 
 .bg-color3{
@@ -130,7 +130,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color:#fff;
     font-size: 21px;
     font-weight: 300;
-    background:#52CCBA;
+    background:#525174;
     outline: none !important;
     border-radius: 0;
     transition: opacity .2s ease-out;
@@ -195,7 +195,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-nav-bc, 
 #main-nav-bc.scrolled{
     position: absolute;
-    height: 135vh;
+    height: 170vh;
     width: 100%;
     top: 0;
     left: 0;
@@ -264,6 +264,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-nav.scrolled{
     background:#525174;
     box-shadow: 0 0 3px rgba(52, 186, 167, 0.4);
+    border-bottom: 7px solid #525174;
 }
 
 #main-nav.scrolled .navbar-toggle{
@@ -350,10 +351,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     margin: 0;
     font-size: 32px;
     font-weight: 400;
-    text-shadow: -5px -5px 10px #52517490, 
-    5px -5px 10px #52517490, 
-    -5px 5px 10px #52517490, 
-    5px 5px 10px #52517490;
+    text-shadow: 0 0px 10px #525174, 
+    0px 0px 10px #525174, 
+    0px 0px 10px #525174, 
+    0px 0px 10px #525174;
 }
 
 #home h1{
@@ -367,9 +368,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     5px 5px 15px #525174;
 }
 
-#home h1 + p{
+/* #home h1 + p{
     font-size: 28px;
-}
+} */
 
 /*-----------------------
 ---- Services Styles ----
@@ -454,12 +455,25 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 --- About Styles ----
 -------------------------*/
 
+#about{
+    border-top: 7px solid #525174;
+}
+
 .polaroid {
     border:12px solid #fff;
     max-width: 85%;
     box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
+}
+
+.about-me-text{
+    background-color: #fff;
+    color: darkslateblue;
+    max-width: 85%;
+    box-shadow: 3px 5px 8px rgba(0,0,0,0.5);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
 }
 
 /*-----------------------
@@ -537,12 +551,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 #portfolio{
     padding-top:70px;
-    background:transparent;
+    background:url('../images/design/colorwaters.jpg');
+    background-size: cover;
     color:#509B9E;
     text-shadow: -2px -2px 15px #fff, 
     2px -2px 15px #fff, 
     -2px 2px 15px #fff, 
     2px 2px 15px #fff;
+    border-top: 7px solid #525174;
     overflow: hidden;
     position: relative;
 }
@@ -982,11 +998,16 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ------------------------*/
 
 #contact{
-    background-image:url('../images/bg-contact.png');
+    /* background-image:url('../images/bg-contact.png');
     background-repeat:no-repeat;
     background-position:0 100%;
-    background-color: #fff;
+    background-color: transparent; */
     border-top: 7px solid #525174;
+    background: url('../images/design/worldmap.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 838px;
+    color: #525174;
 }
 
 #contact-form .form-group label{
@@ -1002,9 +1023,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #contact-form .controls {
+    background: #00000010;
     padding:0;
     margin-bottom:30px;
-    border:1px solid #ddd;
+    border:2px solid #525174;
     border-radius:2px;
 }
 
@@ -1025,6 +1047,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     border-radius:2px;
 }
 
+#contact-form .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+#contact-form .form-control::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+#contact-form .form-control:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+}
+#contact-form .form-control:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
+
 #contact-form .form-group{
     position:relative;
 }
@@ -1035,12 +1070,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position:absolute;
     top:0;
     left:5px;
-    color:#e5e5e5;
+    color:#fff;
     font-size:24px;
     line-height:53px;
     text-align:center;
     font-weight:300;
-    opacity:0.5;
+    opacity:0.8;
     transition:opacity .2s ease-out;
 }
 
@@ -1125,8 +1160,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-footer{
     padding-top:50px;
     padding-bottom:40px;
-    background: url("../images/design/13-01.png");
+    background: url('../images/design/plumpholstery.jpg');
     background-size: 100%;
+    background-position-y: 421px;
 }
 
 .social-links {
