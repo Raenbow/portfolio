@@ -8,7 +8,7 @@ $output = [
     'messages' => []
 ];
 //Sanitize name field
-$message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+$message['name'] = filter_var($_POST['contactName'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])){
     $output['success'] = false;
     $output['messages'][] = 'missing name key';
@@ -20,7 +20,7 @@ if(empty($message['email'])){
     $output['messages'][] = 'invalid email key';
 }
 //Sanitize phone number
-// $message['phone'] = preg_replace('/[^0-9]/', '', $_POST['phone_number']);
+$message['phone'] = preg_replace('/[^0-9]/', '', $_POST['contactPhone']);
 //Sanitize message
 $message['message'] = filter_var($_POST['message'], FILTER_SANITIZE_STRING);
 if(empty($message['message'])){
@@ -29,13 +29,13 @@ if(empty($message['message'])){
 }
 
 if($output['success'] !== null) {
-    http_response_code(400);
+    http_response_code(422);
     echo json_encode($output);
     exit();
 }
 
 $mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // Enable verbose debug output. Change to 0 to disable debugging output.
 
 $mail->isSMTP();                // Set mailer to use SMTP.
 $mail->Host = 'smtp.gmail.com'; // Specify main and backup SMTP servers.
@@ -70,7 +70,7 @@ $message['subject'] = $message['name'] . " has sent you a message on your portfo
 // $message['subject'] = substr($message['message'], 0, 78);
 $mail->Subject = $message['subject'];
 
-$mail->Body    = $message['message'];
+$mail->Body    = $message['message']."<br><br>Sent from:<br>{$message['name']}<br>{$message['phone']}";
 $mail->AltBody = htmlentities($message['message']);
 
 //Attempt email send, output result to client
