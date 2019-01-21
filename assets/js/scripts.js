@@ -17,7 +17,7 @@ $(document).ready(function() {
 	
 	$('#home').height($(window).height()+50);
 	
-	$.backstretch('assets/images/header-bg.jpg');
+	$.backstretch('assets/images/design/floral-drop-2.png');
 	
 	if($(window).scrollTop() > ($(window).height()+50)){
 		$('.backstretch').hide();
@@ -28,7 +28,7 @@ $(document).ready(function() {
 	$(window).scroll( function() {
 		var st = $(this).scrollTop(),
 			wh = $(window).height(),
-			sf = 1.2 - st/(10*wh);
+			sf = 1.1 - st/(10*wh);
 		
 		$('.backstretch img').css({ 
 			'transform' : 'scale('+sf+')', 
@@ -47,7 +47,7 @@ $(document).ready(function() {
 	
 	var st = $(this).scrollTop(),
 		wh = $(window).height(),
-		sf = 1.2 - st/(10*wh);
+		sf = 1.1 - st/(10*wh);
 
 	$('.backstretch img').css({ 
 		'transform' : 'scale('+sf+')', 
@@ -62,17 +62,21 @@ $(document).ready(function() {
 	==============================================*/
 	if ($(window).scrollTop()< ($(window).height()-50)){
 		$('#main-nav').removeClass('scrolled');
+		$('#main-nav-bc').removeClass('scrolled');
 	}
 	else{
-		$('#main-nav').addClass('scrolled');    
+		$('#main-nav').addClass('scrolled');
+		$('#main-nav-bc').addClass('scrolled');     
 	}
 
 	$(window).scroll(function(){
 		if ($(window).scrollTop()< ($(window).height()-50)){
 			$('#main-nav').removeClass('scrolled');
+			$('#main-nav-bc').removeClass('scrolled');
 		}
 		else{
-			$('#main-nav').addClass('scrolled');    
+			$('#main-nav').addClass('scrolled');  
+			$('#main-nav-bc').addClass('scrolled');   
 		}
 	});
 	
