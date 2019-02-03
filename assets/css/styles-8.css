@@ -581,10 +581,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background:url('../images/design/131-5.jpg');
     background-size: cover;
     color:#509B9E;
-    text-shadow: -2px -2px 15px #fff, 
+    /* text-shadow: -2px -2px 15px #fff, 
     2px -2px 15px #fff, 
     -2px 2px 15px #fff, 
-    2px 2px 15px #fff;
+    2px 2px 15px #fff; */
     border-top: 7px solid #525174;
     overflow: hidden;
     position: relative;
@@ -777,6 +777,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .project-item .hover-mask p {
+    color: lightsteelblue;
     margin:0;
     font-size:16px;
     line-height:24px;
