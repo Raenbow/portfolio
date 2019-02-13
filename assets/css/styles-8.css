@@ -163,7 +163,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 
 .btn-color1 .fa,
-.btn-color2 .fa{
+.btn-color2 .fa,
+.btn-color2 .glyphicon{
     margin-right: 15px;
 }
 
@@ -439,7 +440,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     color:#fff;
 }
 
-.service-icon [class*=fa], .service-icon [class*=devicon]{
+.service-icon [class*=fa], 
+.service-icon [class*=devicon],
+.service-icon [class*=glyphicon]{
     -webkit-transform:scale(1);
     transform:rotate(0);
     -webkit-transition:all 0.3s ease-out;
@@ -449,7 +452,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-size: 80px;
 }
 
-.service-item:hover [class*=fa], .service-item:hover [class*=devicon], .service-icon img:hover{
+.service-item:hover [class*=fa],
+.service-item:hover [class*=devicon],
+.service-item:hover [class*=glyphicon],
+.service-icon img:hover{
     -webkit-transform:scale(1.3);
     transform:rotate(360deg);
     -webkit-transition:all 0.5s ease-out;
@@ -575,10 +581,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background:url('../images/design/131-5.jpg');
     background-size: cover;
     color:#509B9E;
-    text-shadow: -2px -2px 15px #fff, 
+    /* text-shadow: -2px -2px 15px #fff, 
     2px -2px 15px #fff, 
     -2px 2px 15px #fff, 
-    2px 2px 15px #fff;
+    2px 2px 15px #fff; */
     border-top: 7px solid #525174;
     overflow: hidden;
     position: relative;
@@ -771,6 +777,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .project-item .hover-mask p {
+    color: lightsteelblue;
     margin:0;
     font-size:16px;
     line-height:24px;
@@ -1112,14 +1119,14 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position:relative;
 }
 
-#contact-form .form-group [class*=fa] {
+#contact-form .form-group [class*=glyphicon] {
     display:block;
     width:64px;
     position:absolute;
     top:0;
     left:5px;
     color:#525174;
-    font-size:24px;
+    font-size:22px;
     line-height:53px;
     text-align:center;
     font-weight:300;
@@ -1127,11 +1134,15 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     transition:opacity .2s ease-out;
 }
 
-#contact-form.no-placeholder .form-group [class*=fa]{
+#contact-form .form-group [class*=glyphicon-phone] {
+    font-size: 25px;
+}
+
+#contact-form.no-placeholder .form-group [class*=glyphicon]{
     top:30px;
 }
 
-#contact-form .form-control:focus + [class*=fa]{
+#contact-form .form-control:focus + [class*=glyphicon]{
     opacity:1;
 }
 
