@@ -603,9 +603,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     will-change: transform; 
     z-index: -9999999;
 }
-.touch #portfolio{
+/* .touch #portfolio{
     background:#1F2C37;
-}
+} */
 
 #filter-works ul {
     list-style:none;
