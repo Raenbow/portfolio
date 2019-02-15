@@ -1526,6 +1526,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         line-height: 42px;
         text-align: center;
         color: #6d6d6d;
+        text-shadow: none;
     }
 
     #main-nav .nav li.active a,
@@ -1537,11 +1538,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         padding-top: 5px;
         font-size: 21px;
         color:#6d6d6d;
+        text-shadow: none;
     }
     
     #main-nav .navbar-brand img{
         margin-right: 10px;
         max-width: 40px;
+    }
+
+    #main-nav.scrolled .navbar-brand {
+        text-shadow: -1px -1px 4px #525174,
+        1px -1px 4px #525174,
+        -1px 1px 4px #525174,
+        1px 1px 4px #525174;
     }
 
     #home .container{
