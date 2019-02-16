@@ -402,7 +402,9 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .service-icon{
     position:relative;
-    display:block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     text-align:center;
     width:150px;
     height:150px;
@@ -448,7 +450,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     -webkit-transition:all 0.3s ease-out;
     transition:none;
     display: inline-block;
-    margin-top: 35px;
+    /* margin-top: 35px; */
     font-size: 80px;
 }
 
@@ -1570,7 +1572,24 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     }
     
     .service-item{
-        margin-bottom: 40px;
+        display: inline-block;
+        padding: 0;
+        /* margin-bottom: 40px; */
+    }
+    .service-icon{
+        width: 85px;
+        height: 85px;
+    }
+    .service-icon [class*=fa], 
+    .service-icon [class*=devicon], 
+    .service-icon [class*=glyphicon]{
+        font-size: 50px;
+    }
+    .service-icon:after{
+        width: 95px;
+        height: 95px;
+        top: -5px;
+        left: -5px;
     }
     
     .polaroid {
