@@ -1613,6 +1613,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         -webkit-transform: rotate(-5deg);
         transform: rotate(-5deg);
     }
+
+    .about-me-text {
+        background-size: 105% 105%;
+    }
     
     .percent{
         top:-45px;
