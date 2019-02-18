@@ -1039,7 +1039,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 .contact-me-text{
     background: url(../images/design/paper.png);
-    background-size: 500px 500px;
+    background-size: 105% 105%;
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px;
@@ -1645,10 +1645,6 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
     #contact {
         height: unset;
-    }
-
-    .contact-me-text {
-        background-size: 105% 105%;
     }
     
     #contact-form{
