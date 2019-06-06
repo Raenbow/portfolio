@@ -1511,6 +1511,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         height: 4px;
         margin-top: 0;
         background:gainsboro !important;
+        box-shadow: -2px -2px 5px #513B56, 2px -2px 5px #513B56, -2px 2px 5px #513B56, 2px 2px 5px #513B56;
     }
 
     #main-nav .navbar-toggle .icon-bar + .icon-bar{
@@ -1562,10 +1563,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         1px 1px 4px #525174;
     }
 
-    #main-nav-bc, #main-nav-bc.scrolled {
-        height: 66vh;
-        width: unset;
+    @media (orientation: portrait){
+        #main-nav-bc, #main-nav-bc.scrolled {
+            height: 66vh;
+            width: unset;
+        }
     }
+    
 
     #home .container{
         margin-top:-80px;
@@ -1641,6 +1645,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
     #contact {
         height: unset;
+        background-attachment: scroll;
     }
     
     #contact-form{
