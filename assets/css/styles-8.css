@@ -1043,11 +1043,16 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     background-repeat: no-repeat;
     background-position: center;
     padding: 50px;
+    min-height: 56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .lead1{
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 0;
+    color: #6f6e87;
 }
 
 .lead2{
@@ -1065,6 +1070,39 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .pleaseEmailDirect{
     display: none;
     color: #ff0000;
+}
+
+.contactList{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 6vh;
+    margin: 2vh;
+    padding-left: 2.5vw;
+}
+
+.contactHeader{
+    margin-bottom: 0;
+}
+.contactHeaderBox{
+    margin-bottom: 2vh;
+}
+
+.contactLooking{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-align: start;
+    margin-bottom: 2vh;
+}
+
+.contactLightBold{
+    font-weight: 500;
+}
+.contactLighterColor{
+    color: #6f6e87;
 }
 
 #contact-form .form-group label{
