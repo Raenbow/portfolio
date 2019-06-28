@@ -1585,8 +1585,13 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     }
     
     #main-nav{
-        background:#fff;
-        box-shadow: 0 0 3px rgba(0,0,0,0.2);
+        background: url(../images/design/neutral-wallpaper.jpeg);
+        box-shadow: 3px 3px 10px #525174;
+    }
+
+    .main-nav-background, .mnb-background{
+        background: unset;
+        box-shadow: unset;
     }
 
     #main-nav .navbar-toggle{
@@ -1601,7 +1606,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         height: 4px;
         margin-top: 0;
         background:gainsboro !important;
-        box-shadow: -2px -2px 5px #513B56, 2px -2px 5px #513B56, -2px 2px 5px #513B56, 2px 2px 5px #513B56;
+        box-shadow: -2px 2px 4px #513B56, 2px -2px 4px #513B56, -2px -2px 4px #513B56, 2px 2px 4px #513B56
     }
 
     #main-nav .navbar-toggle .icon-bar + .icon-bar{
@@ -1622,23 +1627,27 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         text-shadow: none;
     }
 
-    #main-nav.scrolled .nav li.active a {
+    #main-nav.scrolled .nav li.active a{
+        background-size: unset;
+    }
+
+    /* #main-nav.scrolled .nav li.active a {
         text-shadow: -2px -2px 5px #513B56, 
         2px -2px 5px #513B56, 
         -2px 2px 5px #513B56, 
         2px 2px 5px #513B56;
-    }
+    } */
 
-    #main-nav .nav li.active a,
+    /* #main-nav .nav li.active a,
     #main-nav .nav a:hover{
         color: #52CCBA;
-    }
+    } */
 
     #main-nav .navbar-brand{
         padding-top: 5px;
-        font-size: 21px;
+        font-size: 23px;
         color:#6d6d6d;
-        text-shadow: none;
+        /* text-shadow: none; */
     }
     
     #main-nav .navbar-brand img{
@@ -1646,12 +1655,12 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         max-width: 40px;
     }
 
-    #main-nav.scrolled .navbar-brand {
+    /* #main-nav.scrolled .navbar-brand {
         text-shadow: -1px -1px 4px #525174,
         1px -1px 4px #525174,
         -1px 1px 4px #525174,
         1px 1px 4px #525174;
-    }
+    } */
 
     @media (orientation: portrait){
         #main-nav-bc, #main-nav-bc.scrolled {
