@@ -234,8 +234,8 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     font-weight: 900;
     color: #35344c;
     text-shadow: -2px -2px 3px #eeedf7, 2px -2px 3px #eeedf7, -2px 2px 3px #eeedf7, 2px 2px 3px #eeedf7;
-    -webkit-text-stroke: .5px #35344c;
-    letter-spacing: .25px;
+    -webkit-text-stroke: .5px #423e84;
+    letter-spacing: .5px;
     /* font-size:24px;
     font-weight:700;
     color: #fff;
@@ -284,7 +284,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     top: 25%;
     min-height: 50%;
     min-width: 100%;
-    background: rgba(255, 255, 255, .5);
+    /* background: rgba(255, 255, 255, .5); */
     box-shadow: 3px 3px 10px #525174;
     z-index: -1;
 }
@@ -295,14 +295,21 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 .mnb-background{
-    background: url("../images/design/neutral-wallpaper.jpeg");
+    background: url("../images/design/13-01-1.png");
+    box-shadow: none;
+    background-size: 58%;
+}
+
+.mnb-background-overlay{
+    background: rgba(53, 52, 76, 0.6);
     box-shadow: none;
 }
 
 #main-nav.scrolled{
     /* background: linear-gradient(#5d5c84 -75%, #484766); */
-    background: url("../images/design/neutral-wallpaper.jpeg");
+    background: url("../images/design/13-01-1.png");
     box-shadow: 0 10px 30px rgba(82, 81, 116, 0.4);
+    background-size: 58%;
     /* border-bottom: 7px solid #525174; */
 }
 
@@ -342,35 +349,40 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 #main-nav .nav a
 /* #main-nav .nav a:active */
 /* #main-nav .nav a:hover*/{ 
+    position: relative;
     padding:0px 10px;
     font-size:20px;
     line-height:54px;
     font-weight:bold;
     background:transparent;
-    color: #35344c;
-    text-shadow: -2px -2px 3px #eeedf7, 2px -2px 3px #eeedf7, -2px 2px 3px #eeedf7, 2px 2px 3px #eeedf7;
-    -webkit-text-stroke: .5px #35344c;
-    letter-spacing: .25px;
+    color: white;
+    text-shadow: -2px -2px 3px #35344c, 2px -2px 3px #35344c, -2px 2px 3px #35344c, 2px 2px 3px #35344c;
+    -webkit-text-stroke: .5px white;
+    letter-spacing: 0.3px;
     transition: color .2s ease-in;
 }
 
-#main-nav.scrolled .nav a
-/* #main-nav.scrolled .nav a:active */
-/* #main-nav.scrolled .nav a:hover*/{ 
+/* #main-nav.scrolled .nav a
+#main-nav.scrolled .nav a:active
+#main-nav.scrolled .nav a:hover{ 
     color: #35344c;
     text-shadow: -2px -2px 3px #eeedf7, 2px -2px 3px #eeedf7, -2px 2px 3px #eeedf7, 2px 2px 3px #eeedf7;
     -webkit-text-stroke: .5px #35344c;
     letter-spacing: .25px;
-}
+} */
 
-#main-nav .nav a:hover,
-#main-nav.scrolled .nav a:hover,
-#main-nav .nav a:active,
-#main-nav.scrolled .nav a:active{
-    background-image: linear-gradient(120deg, rgb(143, 244, 203) 0%, rgb(158, 143, 244, .5) 100%);
+#main-nav .nav a:hover::before
+/* #main-nav.scrolled .nav a:hover*/{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: -1%;
+    background-image: linear-gradient(120deg, rgb(158, 143, 244, .75) 0%, rgb(143, 244, 203, .75) 100%);
     background-repeat: no-repeat;
-    background-size: 80% 0.2em;
-    background-position: 50% 70%;
+    background-size: 80% 40%;
+    background-position: 0% 20%;
+    z-index: -1;
 }
 
 #main-nav li{
@@ -380,10 +392,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 }
 
 #main-nav.scrolled .nav li.active a{
-    background-image: linear-gradient(120deg, rgb(143, 244, 203) 0%, rgb(158, 143, 244, .5) 100%);
+    background-image: linear-gradient(120deg, rgb(143, 244, 203, .75) 0%, rgb(158, 143, 244, .75) 100%);
     background-repeat: no-repeat;
-    background-size: 80% 0.2em;
-    background-position: 50% 70%;
+    background-size: 85% 40%;
+    background-position: 100% 75%;
 }
 
 /*-----------------------
@@ -1584,14 +1596,25 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         margin-bottom: 40px;
     }
     
-    #main-nav{
-        background: url(../images/design/neutral-wallpaper.jpeg);
+    #main-nav,
+    #main-nav.scrolled{
+        background: url(../images/design/13-01-1.png);
+        background-size: cover;
         box-shadow: 3px 3px 10px #525174;
     }
 
-    .main-nav-background, .mnb-background{
-        background: unset;
+    .main-nav-background{
         box-shadow: unset;
+    }
+
+    .mnb-background{
+        background: unset;
+    }
+
+    .mnb-background-overlay{
+        position: absolute;
+        height: 100%;
+        top: 0;
     }
 
     #main-nav .navbar-toggle{
@@ -1621,10 +1644,11 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     #main-nav .nav a,
     #main-nav .nav a:active,
     #main-nav .nav a:hover{
-        line-height: 42px;
+        /* line-height: 42px; */
         text-align: center;
-        color: #6d6d6d;
-        text-shadow: none;
+        /* color: #6d6d6d; */
+        /* text-shadow: none; */
+        letter-spacing: 0.75px;
     }
 
     #main-nav.scrolled .nav li.active a{
@@ -1661,6 +1685,10 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
         -1px 1px 4px #525174,
         1px 1px 4px #525174;
     } */
+
+    .navbar-nav{
+        margin: unset;
+    }
 
     @media (orientation: portrait){
         #main-nav-bc, #main-nav-bc.scrolled {
