@@ -1532,13 +1532,19 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 ----- Media Queries ----
 ------------------------*/
 
-@media (max-width:991px){
-    
+@media (max-width:1199px){
     .big-text{
         font-size:48px;
         line-height:52px;
         letter-spacing:0.01em;
         word-spacing: 0.15em;
+    }
+}
+
+@media (max-width:991px){
+    .big-text{
+        font-size:43px;
+        line-height:47px;
     }
 
     #main-nav .nav a,
